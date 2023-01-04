@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es_Mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Trees & Colors</title>
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav>
+
+    </nav>
+    <article>
+        <section id="presentación">
+            <div class="homegrid">
+                <div class="home" id="imagen_home">
+                    <img src="./imagenes/Fondo_recorte.png" alt="Imagen de árboles">
+                </div>
+                <div class="home" id="titulo">
+                    <h1>ARBOLES <span>GENIALES</span></h1>
+                </div>
+                <div class="home" id="idea">
+                    <p>Idea: (Mi nombre)</p>
+                </div>
+            </div>
+        </section>
+        <section id="mensaje">
+            <span>
+                <h2>Compra ahora nuestros productos</h2>
+                <p>He aqui una web para adquirir cualquier tipo de árbol en lineal además de que fue lo primero que se me ocurrió xd</p>
+            </span>
+        </section>
+        <section class="producto" id="producto-1">
+            <div class="izquierda">
+                <h2>Pino</h2>
+                <span>
+                    <p>Posee un tronco estrecho y recto con una corteza gruesa de tonalidades rojizas.</p>
+                    <p>A medida que crece, su copa adquiere una peculiar forma ancha y aparasolada, similar a una sombrilla o paraguas.</p>
+                </span>
+            </div>
+            <div class="derecha">
+                <img src="./imagenes/pino.jpg" alt="imagen pino" height="400">
+            </div>
+        </section>
+        <section class="producto" id="producto-2">
+            <div class="izquierda">
+                <h2>Olivo</h2>
+                <span>
+                    <p>El olivo suele tener una altura comprendida entre los cuatro y los doce metros.</p>
+                    <p>Sus raíces están poco esparcidas, pero tienen una enorme capacidad para absorber el agua del suelo.</p>
+                    <p>El tronco es compacto, y de él nacen las ramas.</p>
+                    <p>Las hojas son de color verde oscuro por el haz y blanquecino por el envés.</p>
+                </span>
+            </div>
+            <div class="derecha">
+                <img src="./imagenes/olivo.jpg" alt="imagen pino" height="400">
+            </div>
+        </section>
+        <section class="producto" id="producto-3">
+            <div class="izquierda">
+                <h2>Acacia</h2>
+                <span>
+                    <p>El árbol de acacia se encuentra en el bioma de la sabana.</p>
+                    <p>Los árboles de acacia tienen alrededor de 8 bloques de altura y cuentan con distintos troncos diagonales, y ocasionalmente pueden tener múltiples doseles.</p>
+                </span>
+            </div>
+            <div class="derecha">
+                <img src="./imagenes/minecraft_acacia.png" alt="imagen pino" height="400">
+            </div>
+        </section>
+        <section class="producto" id="producto-4">
+            <div class="izquierda">
+                <h2>Roble</h2>
+                <span>
+                    <p>Un roble es el árbol más común en el juego, se encuentra en una variedad de biomas, disponible en varias variantes.</p>
+                    <p>Tiene el requisito de espacio inicial más pequeño para el crecimiento y, junto con los robles oscuros, tiene la posibilidad de dejar caer una manzana cuando se destruye un bloque de hojas.</p>
+                    <p>Al igual que con los abedules, un roble que crece cerca de las flores puede generar un nido de abejas adjunto.</p>
+                </span>
+            </div>
+            <div class="derecha">
+                <img src="./imagenes/Oak_JE14.webp" alt="imagen pino" height="400">
+            </div>
+        </section>
+        <section class="producto" id="producto-5">
+            <div class="izquierda">
+                <h2>Groot</h2>
+                <span>
+                    <p>Groot es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por Marvel Comics.</p>
+                    <p>Creado por Stan Lee, Larry Lieber y Jack Kirby, el personaje apareció por primera vez en Tales to Astonish # 13.</p>
+                </span>
+            </div>
+            <div class="derecha">
+                <img src="./imagenes/Groot.png" alt="imagen pino" height="400">
+            </div>
+        </section>
+        <section id="comprar">
+            <h2>Comprar Ahora!</h2>
+                <form action="#">
+                    <div class="itemform">
+                        <label for=""><strong>Árbol</strong></label>
+                        <select name="arbol" id="arbol" autocomplete="off" required>
+                            <option value="elige">--Elige una opción--</option>
+                            <option value="pino">Pino</option>
+                            <option value="olivo">Olivo</option>
+                            <option value="abedul">Abedul</option>
+                            <option value="roble">Roble</option>
+                            <option value="groot">Groot</option>
+                        </select>
+                    </div>
+                    <div class="itemform">
+                        <label for=""><strong>Nombre</strong></label>
+                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+                    </div>
+                    <div class="itemform">
+                        <label for=""><strong>Correo</strong></label>
+                        <input type="email" id="correo" name="correo" minlength="2" maxlength="64" size="32" required>
+                    </div>
+                    <div class="itemform">
+                        <label for=""><strong>Dirección</strong></label>
+                        <textarea name="dirección" id="dirección" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="itemform">
+                        <input type="submit" name="" id="" value="ENVIAR">
+                    </div>
+                </form>
+        </section>
+    </article>
+</body>
+</html>
