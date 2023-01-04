@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/*presentacion*/
+#presentación{
+    background-color: #ede2d7;
+}
+.homegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    text-align: center;
+    align-items: center;;
+}
+.homegrid #imagen_home{
+    height: 100%;
+    grid-row: 1/3;
+    margin: 15px 0px 15px 70px;
+}
+.homegrid img{
+    object-fit: cover;
+    overflow:hidden;
+    max-width: 100%;
+    position:relative;
+    height: 100%;
+}
+.homegrid #titulo{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: #493725; 
+}
+.homegrid span{
+    color: transparent;
+    -webkit-text-stroke: 4px #493725;
+}
+.homegrid #idea{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-weight: 100;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+/*Menseje*/
+#mensaje{
+    background-color: #fffcf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*Productos*/
+.producto{
+    display: flex;
+    flex-direction: row;
+}
+.izquierda{
+    display: grid;
+    grid-template-rows: 58px 100px 100px;
+    width: 40%;
+    color: white;
+    padding: 5%;
+    gap: 10px;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+}
+.izquierda h2{
+    font-size: 48px;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+.izquierda span{
+    padding-top: 30px;
+}
+.izquierda p{
+    padding-top: 10px;
+}
+.derecha{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.derecha img{
+    height: 80%;
+    width: 70%;
+    object-fit: cover;
+    padding: 10% 15% 10% 15%;
+}
+#producto-1 .izquierda, #producto-3 .izquierda, #producto-5 .izquierda{
+    background-color: #aba08f;
+}
+#producto-2 .izquierda, #producto-4 .izquierda{
+    background-color: #8b949d;
+}
+#producto-1 .derecha, #producto-3 .derecha, #producto-5 .derecha{
+    background-color: #466a8b;
+}
+#producto-2 .derecha, #producto-4 .derecha{
+    background-color: #ede2d7;
+}
+
+/*comprar*/
+#comprar{
+    background-color: #ede2d7;
+    height: auto;
+    width: auto;
+    padding: 40px;
+    font-size: 18px;
+}
+#comprar h2{
+    padding-bottom: 20px;
+}
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    margin: 10px 0 5px 0;
+    border-radius: 5px;
+}
+.itemform input, .itemform textarea, .itemform select{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    grid-column: 2/3;
+    justify-self: end;
+    border: none;
+}
